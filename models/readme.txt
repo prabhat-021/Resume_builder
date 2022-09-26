@@ -1,0 +1,1 @@
+in this folder we store schemas -- function that deals with database s

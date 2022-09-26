@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/myresume.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- <script src="/assets/js/color.js"></script>  -->
+
+
+    <title>Document</title>
+</head>
+<body style="background:lavender">
+   
+    <div class="font-poppins text-center" style="letter-spacing: 0.1rem "><div class="backimg">
+        <a href="/home"><img class="backimg" src="/img/back.png"  style="    justify-content: center;
+            width: 60px;
+            display: flex;"></a>
+            </div>Choose color  </div>
+
+    <div class="container d-flex justify-content-center " style="gap:0.8rem">
+        <input type="button" class="border-0" id="btn" value="" style="background: red">
+        <input type="button" class="bg-orange border-0" id="btn2" value="">
+        <input type="button" class="bg-blue border-0"  id="btn3" value="">
+        <input type="button" class="bg-green border-0"  id="btn4" value="">
+        <input type="button" class="bg-blueviolet border-0"  id="btn5" value="">
+         <input type="button" class="bg-blueviolet border-0"  id="btn7" value=""> 
+
+    </div>
+<div class="" style="display: flex;
+justify-content: right; position: relative; bottom: 2rem ; right: 2rem;" >
+</div>
+<div class="d-flex justify-content-center py-2" style="gap: 1rem;">
+<button class="btn btn-primary  justify-content-right" id="download" >Download PDF File</button>
+<a href="#formid">
+<button class="btn btn-primary   justify-content-right"  id="">Edit</button>
+</a>
+
+</div>
+
+</script>
+
+<script>
+// color 
+    let color=['red', 'orange' , 'blue' , 'green','blueviolet' ];
+let btn1=document.getElementById('btn');
+//for red
+btn1.addEventListener('click' , function (){
+    let red=color[0];
+     console.log(red); 
+     document.getElementById("tag1").style.background=red;
+     document.getElementById("tag3").style.background=red;
+     document.getElementById("tag4").style.background=red;
+     document.getElementById("tag5").style.background=red;
+     document.getElementById("tag6").style.background=red;
+     document.getElementById("tag2").style.background=red;
+
+ 
+})
+//for orange
+let btn2=document.getElementById('btn2');
+btn2.addEventListener('click' , function (){
+    let orange=color[1];
+    document.getElementById("tag1").style.background=orange;
+     document.getElementById("tag2").style.background=orange;
+     document.getElementById("tag3").style.background=orange;
+     document.getElementById("tag4").style.background=orange;
+     document.getElementById("tag5").style.background=orange;
+     document.getElementById("tag6").style.background=orange;
+
+})
+
+//blue
+let btn3=document.getElementById('btn3');
+btn3.addEventListener('click' , function (){
+    let blue=color[2];
+     document.getElementById("tag1").style.background=blue;
+     document.getElementById("tag2").style.background=blue;
+     document.getElementById("tag3").style.background=blue;
+     document.getElementById("tag4").style.background=blue;
+     document.getElementById("tag5").style.background=blue;
+     document.getElementById("tag6").style.background=blue;
+
+
+})
+//green
+
+let btn4=document.getElementById('btn4');
+btn4.addEventListener('click' , function (){
+    let green=color[3];
+    document.getElementById("tag1").style.background=green;
+     document.getElementById("tag2").style.background=green;
+     document.getElementById("tag3").style.background=green;
+     document.getElementById("tag4").style.background=green;
+     document.getElementById("tag5").style.background=green;
+     document.getElementById("tag6").style.background=green;
+})
+//gray 
+
+let btn5=document.getElementById('btn5');
+btn5.addEventListener('click' , function (){
+    let gray =color[4];
+    document.getElementById("tag1").style.background=gray;
+     document.getElementById("tag2").style.background=gray;
+     document.getElementById("tag3").style.background=gray;
+     document.getElementById("tag4").style.background=gray;
+     document.getElementById("tag5").style.background=gray;
+     document.getElementById("tag6").style.background=gray;
+
+
+
+})
+let btn7=document.getElementById('btn7');
+btn7.addEventListener('click' , function (){
+    let gray =color[5];
+    document.getElementById("tag6").style.background=gray;
+
+
+
+
+})
+
+//download pdf JAVASCRIPT ---------------------------------------------------------------------------------------------------------------
+ window.onload = function(){
+     document.getElementById("download")
+     .addEventListener("click" , ()=>{
+         const invoice=this.document.getElementById("invoice");
+        console.log(invoice);
+         var opt = {
+             margin:       0.3,
+             filename:     'myfile.pdf',
+             image:        { type: 'jpeg', quality: 0.98 },
+            //  html2canvas:  { scale:  2},
+             jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+           };
+
+         html2pdf().from(invoice).set(opt).save();
+         
+     })
+ }
+
+
+ 
+
+// pdf js ends here ----------------------------------------------------------------------------------------------------------------------
+    
+
+        </script>
+
+  <div class="letter-spacingour">
+    <div class=" hscreen bg-gray  "  >
+    <div class="  font-poppins"  >
+
+        <div class="bg-white container " >
+        <div class="row   templatecss  " id="invoice">
+            <div class=" col-6">
+                <img src="https://imgs.search.brave.com/qSsYOmcAFTOMv_Ee0tWdno16hKOkuIFSus10rQ8HzpI/rs:fit:860:857:1/g:ce/aHR0cHM6Ly93d3cu/cG5naXRlbS5jb20v/cGltZ3MvbS8yMi0y/MjQwMDBfcHJvZmls/ZS1waWMtZHVtbXkt/cG5nLXRyYW5zcGFy/ZW50LXBuZy5wbmc" class="profimg  "/>
+       <!-- <div class="html12__page-break"></div> -->
+            </div>
+           
+            <div class="col-6">
+                <!-- <p class="pt-2rem text-centers fs-2 fw-bold"></p> -->
+
+               
+          <p class="pt-2rem text-centers fs-2 fw-bold">  <%= user_res.name %></p>
+     
+            </div> 
+          
+            <div class="container ">
+                <p class="fw-semibold pt-2 bgourg pb-1 mb-1" id="tag1" >About me</p>
+<!-- yaha data base se aega  -->
+                <p class="text-justify"><%= user_res.about %></p>
+                
+             </div>
+            
+             <div class="container">
+              
+
+             <p class="fw-semibold pb-1 mb-1 pt-2 bgourg" id="tag2"  >Education</p>
+            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   <%= user_res.college%></span></p> 
+            <p class="py-0 fw-bold text-gray btech branchcss">Btech in Computer_science</p>
+
+            <p class="font-gray  fw-bold" May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">--------</p>
+
+
+            <p class="font-gray  fw-bold" >May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            <p class="py-0 fw-semibold pb-1 mb-1 text-gray btech branchcss">-------</p>
+        </div>
+           <!-- 3rd  -->
+
+           <div class="container">
+            <p class="fw-semibold pb-1 mb-1 pt-2 bgourg " id="tag3"  >Internships</p>
+            <p class="font-gray  fw-bold">May 2017-June 2021 <span class="text-black">   College Name</span></p> 
+            
+         </div> 
+         
+
+         <!-- projects -->
+         <div class="container">
+         <p class="fw-semibold pb-1 mb-1 pt-2 bgourg " id="tag4">Projects</p>
+         <li>MERN STACK APP</li>
+         <li>C++ MANAGEMNET SYSTEM</li>
+         <li>HEALTCARE SYSTEM</li>
+        </div> 
+
+        <!-- achievement -->
+        <div class="container">
+            <p class="fw-semibold pb-1 mb-1 bgourg pt-2" id="tag5">Achievments</p>
+            <li>Hackathon winner 2021</li>
+            <li>Endeavour Host</li>
+            <li>hult prize</li>
+           </div> 
+           <div class="container">
+            <p class="fw-semibold pb-1 mb-1 pt-2 bgourg" id="tag6" >Skills</p>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+           </div> 
+        </div>
+        </div>
+   
+    </div>
+    <div id="print-btn"></div>
+    
+    <div class="" id="formid" style="padding-top: 2rem;">
+        <h2 class="text-center pt-2 cursive fw-bold  "  >Edit your entries</h2>
+        <p class="text-center">Note for now only name and email entries are editable !</p>
+        <div class="d-flex justify-content-center container  fontclr card  " style="
+        
+        letter-spacing: 0.04rem;
+        width: 40%;
+        flex-direction: column;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    padding-top: 2rem;
+
+        ">
+        
+        <form action="/users/update/<%=user_res.id %>" method="POST">
+          <input type="text" class="form-control my-1"  name="name" value="<%= user_res.name %>">
+          <input type="email" class="form-control  my-1"  name="email" value="<%= user_res.email %>">
+         <input type="submit" class="form-control my-1" value="Edit">
+      </form>
+      </div>
+      </div>
+</div>
+
+
+  </div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet"  href="/css/signup.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+</head>
+<body style=" background: aliceblue">
+  
+        <div class="backimg">
+       <a href="/home"><img class="backimg" src="/img/back.png"  ></a> 
+        </div>
+    <form action="/users/create" method="POST">
+
+        <h2 class="text-center pt-2 cursive fw-bold">Sign Up</h2>
+        <div class="d-flex justify-content-center container  fontclr card  " style="
+        
+        letter-spacing: 0.04rem;
+        width: 40%;
+        flex-direction: column;
+        gap: 2rem;">
+        <label class="formcss fw-semibold">Name</label>
+        <input type="text" name="name"  class="form-control"  id="name" required placeholder="name"/>
+        <label class="formcss fw-semibold " >Email</label>
+        <input type="email " class="form-control bg-form " name="email" id="" placeholder="@gmail.com" required/>
+        <label class="formcss fw-semibold">Password</label>
+        <input type="password"  class="form-control"  name="password" id="" required placeholder="password"/>
+        <label class="formcss fw-semibold">Confirm-password</label>
+        <input type="password"  class="form-control"  name="confirm_password" id="" required  placeholder="confirm_password"/>
+
+        <input type="submit" class="btn  btn-primary" value="SignUp">
+        <div class="">
+        <!-- <input type="submit" class="btn  " value="Login"> -->
+        <p  class="" class="">Already a User ? <a href="./login">Login</a> </link> 
+
+    </div>
+
+    </form>
+</div>
+</div>
+</body>
+</html>

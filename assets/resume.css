@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+html,
+
+body {
+
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* form  */
+.font-poppins {
+  font-family: 'Poppins', sans-serif;
+}
+.text-gray{
+  color: dimgray;
+}
+.bg-resume {
+  background-color: rgb(243, 244, 249);
+}
+.fs-resumehead{
+font-size: medium;
+}
+.button-class {
+  display: flex;
+flex-direction: column;
+}
+.sidebar-btn {
+  height: 2rem;
+}
+.sidebar-image {
+  height: 2rem;
+}
+.list-style {
+  list-style-type: none;
+  font-size: medium;
+  cursor: pointer;
+  
+
+}
+.pt-2rem{
+  padding-top: 2rem;
+}
+.height-maxcontent{
+  height: max-content;
+  margin-top: 4.6rem;
+
+}
+.margin-2rem{
+  margin-top: 2rem;
+}
+.paddingbottom-1rem {
+  padding-bottom: 1rem;
+}
+.profimg {
+    height:12vh;
+    padding-left:14rem;
+    /* margin-top:4rem; */
+}
+.hscreen {
+    height:100vh;
+}
+.templatecss {
+    margin-left:4rem;
+    margin-right:4rem;
+    /* margin-top:3rem; */
+}

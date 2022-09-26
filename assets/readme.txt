@@ -1,0 +1,1 @@
+in this directory we store css images , etc
